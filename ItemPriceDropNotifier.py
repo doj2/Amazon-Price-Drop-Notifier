@@ -32,7 +32,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('jdotrucksyou@gmail.com', 'whcebgrypansjvhf')
+    server.login('YOUREMAIL@gmail.com', 'YOURPASSWORD')
 
     subject = 'AMD Ryzen 3600 Price has dropped!'
     body= 'Check the link! https://www.amazon.com/AMD-Ryzen-3600-12-Thread-Processor/dp/B07STGGQ18/ref=sr_1_2?keywords=amd+ryzen+5+3600&qid=1578609808&sr=8-2'
@@ -40,8 +40,8 @@ def send_mail():
     msg = f"Subject: {subject}\n\n{body}"
 
     server.sendmail(
-        'jdotrucksyou@gmail.com',
-        'jd9redyahoo@gmail.com',
+        'YOURSENDINGEMAIL@gmail.com',
+        'THERECEIVINGEMAIL@gmail.com',
         msg
     )
     print('HEY EMAIL HAS BEEN SENT')
